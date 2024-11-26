@@ -1,1 +1,2 @@
 # Web-Dev-Practices
+Welcome to WebDevPractices, a repository dedicated to learning and practicing web development techniques, focusing on both front-end and back-end technologies. This repo will serve as a collection of my daily web development practice, from HTML to full-stack applications.
