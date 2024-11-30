@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 1. element Selector: Selects HTML elements based on the element name.
+        h1
+        {
+        text-align: center;
+        }
+
+        2. id Selector(#): used to select one unique element
+        #myid1
+        {   
+        background-color: beige;
+        margin-top: 5px;
+        }
+
+        3. class Selector(.)
+        .myClass{
+        text-align: center;
+        padding: 10px;
+        }
+
+        4. Universal Selector(*): selects all HTML elements on the page.
+
+        5. Grouping Selector: selects all the HTML elements with the same style definitions.
+        h2, h3, pre {
+        text-align: center;
+        color: red;
+        }
+
+        6. Descendant Combinator: matches all elements that are descendants of a specified element.
+
+        7. Child Selector(>): selects all elements that are the children of a specified element.
+
+        8. attribute selector: used to select elements with a specified attribute.
+        a[target]
+        {
+        background-color: coral;
+        }
+        The links with a target attribute gets a coral background.
+
+        9. Combinators: Combine selectors for complex targeting.
+        p.myClass
+        {
+        color: brown;
+        }
+
+        10. pseudo-class: Style an element when a user moves the mouse over it.
+                          Style visited and unvisited links differently.
+        div:hover
+        {
+        background-color: blue;
+        }
+
+        a:visited{
+            color: green;
+        }
+
+        a:hover{
+            color: pink;
+        }
+     -->
+
+    <div>
+        <h1>Welcome</h1>
+    </div>
+
+    <div id="myid1">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, quisquam.</p>
+    </div>
+    <div id="myid2">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus.</p>
+    </div>
+
+    <p class="myClass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aspernatursint minus suscipit
+        exercitationem amet
+        aliquam incidunt quibusdam quasi ex?</p>
+
+    <pre class="myClass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aspernatur
+            sint minus suscipit exercitationem amet 
+            aliquam incidunt quibusdam quasi ex?</pre>
+
+    <h2>Welcome</h2>
+    <h3>New Courses</h3>
+    <pre>Lorem ipsum dolor 
+        sit amet consectetur adipisicing elit. 
+        Consequuntur, molestias?</pre>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <!-- <h2 style="text-align: center;color: brown;">Descendant Selector</h2> -->
+    <!-- <div>
+        <p>Paragraph 1 in Div.</p>
+        <p>Paragraph 2 in Div.</p>
+        <section>
+            <p>Paragraph 3 in Div.</p>
+        </section>
+    </div> -->
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>Child Selector</h2>
+    <div>
+        <p>Paragraph 1 in Div.</p>
+        <p>Paragraph 2 in Div.</p>
+        <section>
+            <!-- not Child but Descendant -->
+            <p>Paragraph 3 in Div.</p>
+        </section>
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <a href="https://www.google.com/">Google</a><br>
+    <a href="https://en.wikipedia.org/wiki/Badminton_at_the_Summer_Olympics" target="_blank">Badminton at the Summer
+        Olympics</a>
+
+</body>
+
+</html>

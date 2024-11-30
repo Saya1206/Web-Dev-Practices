@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  width: 100%;
+  margin: auto;
+  background-color: aliceblue;
+  padding: 8px;
+}
+
+div:hover {
+  background-color: rgb(94, 142, 185);
+}
+
+/* unvisited link */
+a:link {
+  color: purple;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+/* mouse over link */
+a:hover {
+  color: pink;
+}
+
+h1 {
+  text-align: center;
+  color: brown;
+}
+
+#myid1 {
+  height: 300px;
+  width: 300px;
+  background-color: beige;
+  margin-top: 5px;
+}
+
+#myid2 {
+  height: 300px;
+  width: 300px;
+  background-color: cornflowerblue;
+  margin-top: 5px;
+}
+
+.myClass {
+  background-color: bisque;
+  text-align: center;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+p.myClass {
+  color: brown;
+}
+
+h2,
+h3,
+pre {
+  text-align: center;
+  color: cadetblue;
+}
+
+div p {
+  background-color: yellow;
+  margin: 5px;
+}
+
+div > p {
+  background-color: khaki;
+  margin: 5px;
+}
+
+a[target] {
+  background-color: coral;
+}
+
+a {
+  text-decoration: none;
+}
