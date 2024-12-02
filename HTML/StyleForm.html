@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style an HTML Form</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background-color: cornsilk;
+            padding: 10px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 400px;
+            margin-top: 10px;
+        }
+
+        .container h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-top: 5px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 90%;
+            padding: 5px;
+            border: 2px solid rgb(193, 192, 192);
+            border-radius: 5px;
+        }
+
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .form-group input[type="submit"] {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Student Registration Form</h2>
+        <div class="form-group">
+            <label for="sname">First Name</label>
+            <input type="text" name="sname" id="s1">
+        </div>
+
+        <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="s2">
+        </div>
+
+        <div class="form-group">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="">Select your country</option>
+                <option value="india">India</option>
+                <option value="uk">UK</option>
+                <option value="us">US</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Select Gender</label>
+            <input type="radio" name="gender" id="male">Male
+            <input type="radio" name="gender" id="female">Female
+            <input type="radio" name="gender" id="others">Others
+        </div>
+
+        <div class="form-group">
+            <label for="interest">Interset</label>
+            <input type="checkbox" name="travel" id="tarvel">Travel
+            <input type="checkbox" name="sport" id="sport">Sport
+            <input type="checkbox" name="reading" id="reading">Reading
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Submit">
+        </div>
+
+    </div>
+</body>
+
+</html>
