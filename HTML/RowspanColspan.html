@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Rowspan & Colspan</title>
+    <style>
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 50%;
+            margin: auto;
+        }
+
+        th,
+        td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Table with Colspan -->
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Class</th>
+        </tr>
+        <tr>
+            <td>Mohini</td>
+            <td>Madhura</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Rohit</td>
+            <td>Janhvi</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>Aman</td>
+            <td>12</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <!-- Table with Rowspan -->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th rowspan="3">DYP College</th>
+        </tr>
+        <tr>
+            <td>Mohini</td>
+            <td>Third Year</td>
+        </tr>
+        <tr>
+            <td>Rohit</td>
+            <td>First Year</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>Smith</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Phone</th>
+            <td>555-9909</td>
+        </tr>
+        <tr>
+            <td>555-1234</td>
+        </tr>
+    </table>
+</body>
+
+</html>
