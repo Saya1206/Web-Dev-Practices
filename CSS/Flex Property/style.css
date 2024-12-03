@@ -1,0 +1,17 @@
+.container1 {
+  height: 500px;
+  border: 2px solid black;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* flex-wrap: wrap; Items wrap onto multiple lines */
+}
+
+.items {
+  height: 100px;
+  width: 100px;
+  background-color: cadetblue;
+  border: 2px solid black;
+}

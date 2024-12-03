@@ -1,0 +1,18 @@
+.container {
+  height: 500px;
+  border: 2px solid black;
+  display: flex;
+}
+
+#box-1 {
+  flex-shrink: 0; /* Prevent shrinking */
+  /* flex-grow: 1; allows the first div to grow and take up available space within the flex container. */
+}
+
+.second {
+  /* flex-grow: 1; All items with flex-grow: 1 share equal extra space */
+  height: 100px;
+  width: 100px;
+  background-color: cadetblue;
+  border: 2px solid black;
+}
