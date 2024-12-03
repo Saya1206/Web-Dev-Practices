@@ -1,0 +1,49 @@
+#item1 {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+  /* position: absolute; */
+}
+
+#item2 {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+  position: relative;
+  left: 40px;
+}
+
+#item3 {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+}
+
+.first {
+  height: 200px;
+  width: 200px;
+  background-color: aliceblue;
+  border: 2px solid black;
+  position: relative;
+}
+
+.second {
+  height: 70px;
+  width: 70px;
+  background-color: chocolate;
+  border: 2px solid black;
+  left: 50px;
+  top: 50px;
+  position: absolute;
+}
+
+.fixed {
+  background-color: aqua;
+  border: 2px solid saddlebrown;
+  width: 10%;
+  top: 0;
+  right: 0;
+  position: fixed;
+}
