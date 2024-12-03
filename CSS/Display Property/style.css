@@ -1,0 +1,25 @@
+#first {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  background-color: antiquewhite;
+  margin-bottom: 10px;
+  display: inline;
+}
+
+#second {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  background-color: antiquewhite;
+  margin-bottom: 10px;
+  display: inline;
+}
+
+#third {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  background-color: antiquewhite;
+  display: inline-block;
+}
