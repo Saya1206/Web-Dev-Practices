@@ -1,0 +1,27 @@
+#a {
+  height: 100px;
+  width: 100px;
+  background-color: lightblue;
+  padding: 10px;
+  margin-bottom: 50px;
+  transform: rotate(25deg); /* Rotates 25 degrees clockwise */
+}
+
+#b {
+  height: 100px;
+  width: 100px;
+  background-color: lightcoral;
+  padding: 10px;
+  margin-bottom: 50px;
+  transform: scale(1.5, 2); /* 1.5x width and 2x height */
+  /* transform: scaleX(1.5) scales only horizontally.
+  transform: scaleY(2) scales only vertically. */
+}
+
+#c {
+  height: 100px;
+  width: 100px;
+  background-color: lightpink;
+  padding: 10px;
+  transform: skewY(30deg); /* skews only along the Y-axis. */
+}
