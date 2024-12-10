@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types</title>
+</head>
+
+<body>
+    <script>
+        // Data Types: data types to hold different types of values.
+
+        //1. Primitive data type: hold a single value
+        // Number, String, Boolean, Null, Undefined
+
+        //2. Non-primitive data type: hold multiple values
+        // Array, Json Object, Date
+
+        // JavaScript has dynamic types. This means that the same variable can be used to hold different data types
+
+        // number
+        let age = 10;
+        let pi = 3.14;
+
+        console.log(age);  // Integer
+        console.log(pi);  // Float
+
+        //typeof operator is used to determine the type of a value or variable.
+        console.log(typeof age);
+        console.log(typeof pi);
+
+        // string: use single(''), double(""), template literals(``)
+
+        let name = "neha";
+        let char = 'abc';
+
+        console.log(name);
+        console.log(char);
+
+        console.log(typeof name);
+        console.log(typeof char);
+
+        //Template literal use with backtic(``) hold ${} expression
+        console.log(`my name is ${name}`);
+
+        // boolean
+        let pass = true;
+        console.log(typeof pass);
+
+        let isDrive = false;
+        console.log(typeof isDrive);
+
+        // undefined: A variable declared but not assigned a value
+        var a;
+        console.log(a);
+
+        let b;
+        console.log(b);
+
+        // null: Represents absence of value
+        let c = null;
+        console.log(c);  //null
+        console.log(typeof null);      // object (legacy bug in JavaScript)
+
+
+        //non-primitive data types
+        // Object: A collection of key-value pairs
+
+        let student = {
+            id: 1,
+            name: 'vivek',
+            age: 23
+        }
+
+        console.log(student);
+        console.log(student.age);
+        console.log(`Student name is ${student.name} and id is ${student.id}.`);
+        console.log(typeof student); //object
+
+        // Array: A special type of object for storing ordered collections of data
+
+        let fruits = ["Apple", "Banana", "Oranges", "Cherry"];
+        console.log(fruits);
+
+        for (var i = 0; i < fruits.length; i++) {
+            console.log(fruits[i]);
+        }
+
+        console.log(typeof fruits); //object
+
+        // Date: Used to handle date and time
+
+        let data = new Date();
+        console.log(`Today's Date is ${data}`);
+
+    </script>
+</body>
+
+</html>
