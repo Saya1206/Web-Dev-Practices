@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Conversion</title>
+</head>
+
+<body>
+    <script>
+        // Type Conversion: Conversion of one data type to another data type
+
+        // 1. Implicit conversion: Implicit conversion occurs automatically.
+
+        let name = "rohit";
+        // name = name + " joshi";
+        name = name + '4';
+        console.log(name);
+
+        console.log(typeof ("5" + 3)); // "string" (implicit type coercion)
+
+        let x = "car" + 10;
+        // x = 10 + 10 + "sky";  //JS treats 10 and 10 as numbers, until it reaches "sky".
+        x = 10 + 10 + "sky" + 10 + 10;  //After string, number datatype convert to string(Implicit Conversion)
+        console.log(x);
+
+
+        // 2. Explicit conversion: Explicit conversion can be done with functions like String(), Number(), and Boolean().
+
+        let result = Number('5') + 5;
+        console.log(result);
+
+        console.log(Number("35"));  // 35
+        console.log(Boolean(0));  // false
+        console.log(Boolean(1));  // true
+        console.log(String(true)); // "true"
+
+    </script>
+</body>
+
+</html>
