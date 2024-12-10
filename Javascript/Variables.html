@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Variables</title>
+</head>
+
+<body>
+
+    <h2 id="demo">Redeclaring a variable using var</h2>
+    <h2 id="demo2">Declaring a variable using let</h2>
+    <h2 id="demo3">Declaring a variable using const</h2>
+
+    <h2 id="block">Block Scope</h2>
+    <h2 id="global">Global Scope</h2>
+
+    <script>
+        // Variables are Containers for Storing Data
+
+        var a = 4;
+        var a = 5;  // Re-declaration allowed
+        document.getElementById("demo").innerHTML = a;
+
+        let b = 10;
+        // let b = 12; //We can not redeclared a same variable using let keyword
+        b = 20; // Value update allowed
+        document.getElementById("demo2").innerHTML = b;
+
+        const c = 35;
+        //c = 20; // Error: Cannot reassign a constant variable
+        document.getElementById("demo3").innerHTML = c;
+
+
+        // Hoisting
+        // Variables declared with var are "hoisted" to the top of their scope and initialized as undefined.
+
+        console.log(x);  //undefined(hoisted)
+        var x = 3;
+
+        // console.log(y);  //ReferenceError: Cannot access 'y' before initialization
+        // let y = 4;
+
+
+        // Variable Scope
+
+        if (true) {
+            var f = 50;  //Global Scope
+
+            let e = 40;  //Block Scope
+            console.log(e);
+        }
+
+        console.log(f);  //Can access outside the block
+        // console.log(e);  //Can not access outside the block
+
+
+        // 1. Block Scope - let
+        //Variables declared inside a { } block cannot be accessed from outside the block
+
+        let z = 10;
+        // Here z is 10
+
+        {
+            let z = 5;
+            // Here z is 5
+        }
+
+        // Here z is 10
+        document.getElementById("block").innerHTML = z;
+
+
+        //2. Global Scope - var
+        //Variables declared with the var always have Global Scope
+
+        var g = 10;
+        // Here g is 10
+
+        {
+            var g = 5;
+            // Here g is 5
+        }
+
+        // Here g is 5
+        document.getElementById("global").innerHTML = g;
+
+
+    </script>
+</body>
+
+</html>
