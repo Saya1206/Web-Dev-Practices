@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Loops</title>
+</head>
+
+<body>
+    <script>
+        // Looping Statements: Loops can execute a block of code a number of times
+        //for loop, while loop, do-while loop
+
+        // for loop
+
+        /*
+        for (expression 1; expression 2; expression 3) {
+            // Task
+        }
+            */
+
+        for (let i = 1; i <= 10; i++) {
+            console.log(i);
+        }
+
+
+        // while loop
+
+        /*
+        expression 1;
+        while(expression 2){
+            Task;
+            expression 3;
+        }
+            */
+
+        //find sum of number of digits. 456 => 4+5+6
+
+        let num = 456;
+        let sum = 0;
+
+        while (num != 0) {
+            let rem = num % 10;
+            sum = parseInt(sum + rem);
+            num = num / 10;
+        }
+
+        console.log(`sum of digits: ${sum}`);
+
+
+        // do-while loop
+
+        /*
+        expression 1;
+        do{
+            Task;
+            expression 2;
+        }while(expression 3);
+        */
+
+        let j = 10;
+        do {
+            console.log(j);
+            j--;
+        } while (j > 0);
+
+    </script>
+</body>
+
+</html>
