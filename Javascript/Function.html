@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function</title>
+</head>
+
+<body>
+    <script>
+        //Function: Function is a block of code and it is used to perform some task.
+        //We create a function using function keyword.
+
+        // 1. Function Declaration
+        //A named function that can be called anywhere in the scope after it's declared.
+
+        function greet(name) {
+            console.log(`Hello ${name}`);
+        }
+
+        // Call the function
+        greet("Ram");
+
+        function msg(m) {
+            console.log(m);
+        }
+        msg(35);
+        msg("Hello Guys!!");
+
+
+        // 2. Function Expression: A function assigned to a variable. 
+        //It can be anonymous (no name) or named.
+
+        //named
+
+        const f = function myfun() {
+            console.log("Hello");
+        }
+        f();
+
+        //anonymous (no name)
+
+        const f1 = function () {
+            console.log("anonymous function called..");
+        }
+        f1();
+
+
+        // 3. Returning Values from Functions: return keyword
+
+        function sum(n1, n2) {
+            return n1 + n2;
+        }
+
+        // Function is called, the return value will end up in result
+        let result = sum(10, 20);
+        console.log(result);
+
+        console.log(sum(3, 4));
+
+        function message(text) {
+            return text;
+        }
+        let str = message("Bye Bye");
+        console.log(str);
+
+
+        // 4. Arrow Function
+
+        const r = ((name) => {
+            console.log(`My name is ${name}`);
+        })
+        r("sakshi");
+
+
+        // 4. Callback function: A callback function is a function passed as an argument to another function 
+        //and executed after the completion of that function.
+
+        function myfunction(callback) {
+            callback();  //first the callback() statement is executed.
+            console.log("inside my function");
+        }
+
+        function handlecallback() {
+            console.log("callback function called");
+        }
+
+        myfunction(handlecallback);
+
+        function print(name, callback) {
+            console.log(`Hello, ${name}`);
+            callback();
+        }
+
+        function sayBye() {
+            console.log("Good Bye!!");
+        }
+
+        //The print function is called with two arguments: the string 'Rahul' & the function sayBye.
+        //first print the name then the callback() statement is executed. Since sayBye is passed as callback, it is invoked.
+        print("Rahul", sayBye);
+
+        //using arrow function
+
+        function mul(callback) {
+            var n1 = 2, n2 = 4;
+            callback(n1, n2);
+        }
+
+        mul((n1, n2) => {
+            console.log("Result: " + n1 * n2);
+        })
+
+
+        //setTimeout() : The setTimeout() method calls a function after a number of milliseconds.
+        //setTimeout(function, milliseconds);  1 sec = 1000 milliseconds
+
+        setTimeout(() => {
+            console.log("Hello after 2 seconds");
+        }, 2000);
+
+
+        //setInterval(): is used to repeatedly execute a function or block of code at a specified time interval (in milliseconds). 
+
+        // setInterval(() => {
+        //     console.log("This message repeats every 2 seconds");
+        // }, 2000);
+
+        //for clear Interval
+        let c = setInterval(() => {
+            console.log("This message repeats every 2 seconds");
+        }, 2000);
+
+        clearInterval(c);
+
+    </script>
+</body>
+
+</html>
