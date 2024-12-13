@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrtion Form</title>
+    <style>
+        body {
+            background-color: azure;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        .form {
+            background-color: antiquewhite;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 10px 5px 5px gray;
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .form h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 90%;
+            padding: 7px;
+            border: 1px solid grey;
+            border-radius: 2px;
+        }
+
+        .form-group input[type="checkbox"],
+        .form-group input[type="radio"] {
+            width: auto;
+            margin-left: 5px;
+        }
+
+        .form-group button {
+            width: 95%;
+            padding: 8px;
+            background-color: cadetblue;
+            color: white;
+            border: 1px solid grey;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <h2>Student Registrtion Form</h2>
+
+        <div class="form-group">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div class="form-group">
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass">
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="male">Male
+            <input type="radio" name="gender" id="female">Female
+            <input type="radio" name="gender" id="other">Other
+        </div>
+
+        <div class="form-group">
+            <label for="country">Select Country</label>
+            <select name="country" id="country">
+                <option value="">Select Country</option>
+                <option value="india">India</option>
+                <option value="uk">UK</option>
+                <option value="us">US</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="interest">Select Interest</label>
+            <input type="checkbox" name="reading" id="reading">Reading
+            <input type="checkbox" name="playing" id="playing">Playing
+            <input type="checkbox" name="travelling" id="travelling">Travelling
+        </div>
+
+        <div class="form-group">
+            <label for="text">Anything that can you written</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</body>
+
+</html>
