@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Width</title>
+    <style>
+        #first {
+            border: 2px solid salmon;
+            width: 500px;
+            margin: auto;
+        }
+
+        #second {
+            border: 2px solid salmon;
+            max-width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Setting the width of a block-level element will prevent it from stretching -->
+    <div id="first">
+        This div element has width: 500px;
+    </div>
+
+    <br><br>
+
+    <!-- Using max-width, will improve the browser's handling of small windows -->
+    <div id="second">
+        This div element has max-width: 500px;
+    </div>
+</body>
+
+</html>

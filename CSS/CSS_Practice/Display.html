@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Display Property</title>
+    <style>
+        #one {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            display: inline;
+        }
+
+        #second {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            display: inline;
+        }
+
+        #third {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+
+        span {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            display: block;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .invisible {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="one">Item 1</div>
+    <div id="second">Item 2</div>
+    <div id="third">Item 3</div>
+
+    <span>Span Element</span>
+
+    <h2>Display: none property</h2>
+    <p class="hidden">Hidden info</p>
+    <h3>welcome</h3>
+
+    <h2>Display: none property</h2>
+    <p class="invisible">Hidden info</p>
+    <h3>welcome</h3>
+</body>
+
+</html>

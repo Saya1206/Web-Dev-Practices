@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        @media(max-width:600px) {
+            body {
+                background-color: bisque;
+            }
+
+            h1 {
+                color: blue;
+            }
+
+            p {
+                font-weight: bold;
+            }
+        }
+
+        @media(min-width:601px) and (max-width:800px) {
+            body {
+                background-color: aliceblue;
+                font-size: medium;
+            }
+
+            h1 {
+                color: cadetblue;
+            }
+        }
+
+        @media (min-width:801px) {
+            body {
+                background-color: darkgray;
+            }
+
+            h1 {
+                color: brown;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Media Query</h1>
+    <p>Media Query is used to make our website responsive.</p>
+</body>
+
+</html>

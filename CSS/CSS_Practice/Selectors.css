@@ -1,0 +1,63 @@
+/*  Universal Selector  */
+* {
+  font-family: "Franklin Gothic Medium", sans-serif;
+}
+
+/* Element Selector */
+h1 {
+  color: brown;
+  text-align: center;
+}
+
+/* Id Selector */
+#myid {
+  font-size: 20px;
+}
+
+/* Class Selector */
+.myclass {
+  color: chocolate;
+  background-color: aliceblue;
+}
+
+/* Grouping Selector */
+/* h2,
+h3,
+p {
+  text-align: right;
+} */
+
+/* Attribute Selector */
+a[target] {
+  color: cadetblue;
+}
+
+/* Pseudo Class Selector */
+a:hover {
+  background-color: antiquewhite;
+}
+
+/* Pseudo Element Selector */
+/* Add and style contents before paragraph */
+/* p::before {
+  content: "Note: ";
+  color: red;
+} */
+
+/* Add and style contents after paragraph */
+/* p::after {
+  content: " [Copyrights]";
+  color: blue;
+} */
+
+/* Descendant Selector */
+/* div p {
+  color: brown;
+  background-color: aquamarine;
+} */
+
+/* Child Selector */
+
+div > p{
+    color: yellowgreen;
+}

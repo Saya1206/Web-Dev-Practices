@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        #first {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin-bottom: 15px;
+        }
+
+        #second {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin-bottom: 15px;
+            position: relative;
+            left: 20px;
+        }
+
+        #third {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            /* position: absolute;
+            top: 20px; */
+        }
+
+        .out {
+            height: 300px;
+            width: 300px;
+            border: 2px solid sienna;
+            position: relative;
+        }
+
+        .in {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            position: absolute;
+            top: 100px;
+            right: 0;
+        }
+
+        .fix {
+            border: 2px solid slateblue;
+            background-color: orchid;
+            top: 0;
+            position: fixed;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: bisque;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="first">First Div</div>
+    <div id="second">Second Div</div>
+    <div id="third">Third Div</div>
+
+    <br>
+
+    <div class="out">
+        I'm positioned relative
+        <div class="in">I'm positioned absolute</div>
+    </div>
+
+    <br>
+
+    <div class="fix">I'm Fixed Div</div>
+
+    <div class="sticky">I am Sticky</div>
+
+    <br>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quae animi ab, doloribus ad temporibus cumque quod
+        aperiam debitis accusantium non repudiandae explicabo nesciunt atque sit eveniet voluptatum odit ut. Aliquam
+        obcaecati error pariatur sequi modi quae laboriosam voluptatibus sapiente fugit expedita ipsam similique,
+        recusandae asperiores vel magni totam. Quia, voluptates ducimus rerum nulla aliquam dicta illum eveniet
+        cupiditate exercitationem voluptate quae vero recusandae fuga eius delectus! Blanditiis distinctio animi iure
+        unde exercitationem rerum velit, dignissimos porro soluta laboriosam qui iste, eligendi repellat? Ratione
+        delectus mollitia natus, eos nam debitis porro sunt incidunt quas error numquam dolores. Laborum aliquid libero
+        doloribus accusamus officia debitis error voluptas dolorum quis quo accusantium mollitia cupiditate, ex, a
+        suscipit necessitatibus magni aspernatur et inventore quam sunt. Quam molestiae esse tempore repudiandae,
+        possimus blanditiis! Laboriosam eaque ipsam voluptate sint deserunt, quidem officiis error ex expedita ad modi.
+        Debitis libero autem commodi recusandae, repudiandae voluptatibus sequi, sapiente nostrum ex voluptatum dolores
+        quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius error voluptas ea dicta.
+        Expedita, amet esse? Deserunt laudantium delectus assumenda ad ipsa. Eligendi voluptates quam minima
+        voluptatibus quae eos explidelectus mollitia natus, eos nam debitis porro sunt incidunt quas error numquam
+        dolores. Laborum aliquid libero
+        doloribus accusamus officia debitis error voluptas dolorum quis quo accusantium mollitia cupiditate, ex, a
+        suscipit necessitatibus magni aspernatur et inventore quam sunt. Quam molestiae esse tempore repudiandae,
+        possimus blanditiis! Laboriosam eaque ipsam voluptate sint deserunt, quidem officiis error ex expedita ad modi.
+        Debitis libero autem commodi recusandae, repudiandae voluptatibus sequi, sapiente nostrum ex voluptatum dolores
+        quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius error voluptas ea dicta.
+        Expedita, amet esse? Deserunt laudantium delectus assumenda ad ipsa. Eligendi voluptates quam minima
+        voluptatibus quae eos explidelectus mollitia natus, eos nam debitis porro sunt incidunt quas error numquam
+        dolores. Laborum aliquid libero
+        doloribus accusamus officia debitis error voluptas dolorum quis quo accusantium mollitia cupiditate, ex, a
+        suscipit necessitatibus magni aspernatur et inventore quam sunt. Quam molestiae esse tempore repudiandae,
+        possimus blanditiis! Laboriosam eaque ipsam voluptate sint deserunt, quidem officiis error ex expedita ad modi.
+        Debitis libero autem commodi recusandae, repudiandae voluptatibus sequi, sapiente nostrum ex voluptatum dolores
+        quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius error voluptas ea dicta.
+        Expedita, amet esse? Deserunt laudantium delectus assumenda ad ipsa. Eligendi voluptates quam minima
+        voluptatibus quae eos explidelectus mollitia natus, eos nam debitis porro sunt incidunt quas error numquam
+        dolores. Laborum aliquid libero
+        doloribus accusamus officia debitis error voluptas dolorum quis quo accusantium mollitia cupiditate, ex, a
+        suscipit necessitatibus magni aspernatur et inventore quam sunt. Quam molestiae esse tempore repudiandae,
+        possimus blanditiis! Laboriosam eaque ipsam voluptate sint deserunt, quidem officiis error ex expedita ad modi.
+        Debitis libero autem commodi recusandae, repudiandae voluptatibus sequi, sapiente nostrum ex voluptatum dolores
+        quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius error voluptas ea dicta.
+        Expedita, amet esse? Deserunt laudantium delectus assumenda ad ipsa. Eligendi voluptates quam minima
+        voluptatibus quae eos explidelectus mollitia natus, eos nam debitis porro sunt incidunt quas error numquam
+        dolores. Laborum aliquid libero
+        doloribus accusamus officia debitis error voluptas dolorum quis quo accusantium mollitia cupiditate, ex, a
+        suscipit necessitatibus magni aspernatur et inventore quam sunt. Quam molestiae esse tempore repudiandae,
+        possimus blanditiis! Laboriosam eaque ipsam voluptate sint deserunt, quidem officiis error ex expedita ad modi.
+        Debitis libero autem commodi recusandae, repudiandae voluptatibus sequi, sapiente nostrum ex voluptatum dolores
+        quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius error voluptas ea dicta.
+        Expedita, amet esse? Deserunt laudantium delectus assumenda ad ipsa. Eligendi voluptates quam minima
+        voluptatibus quae eos explidelectus mollitia natus, eos nam debitis porro sunt incidunt quas error numquam
+        dolores. Laborum aliquid libero
+        doloribus accusamus officia debitis error voluptas dolorum quis quo accusantium mollitia cupiditate, ex, a
+        suscipit necessitatibus magni aspernatur et inventore quam sunt. Quam molestiae esse tempore repudiandae,
+        possimus blanditiis! Laboriosam eaque ipsam voluptate sint deserunt, quidem officiis error ex expedita ad modi.
+        Debitis libero autem commodi recusandae, repudiandae voluptatibus sequi, sapiente nostrum ex voluptatum dolores
+        quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius error voluptas ea dicta.
+        Expedita, amet esse? Deserunt laudantium delectus assumenda ad ipsa. Eligendi voluptates quam minima
+        voluptatibus quae eos explidelectus mollitia natus, eos nam debitis porro sunt incidunt quas error numquam
+        dolores. Laborum aliquid libero
+        doloribus accusamus officia debitis error voluptas dolorum quis quo accusantium mollitia cupiditate, ex, a
+        suscipit necessitatibus magni aspernatur et inventore quam sunt. Quam molestiae esse tempore repudiandae,
+        possimus blanditiis! Laboriosam eaque ipsam voluptate sint deserunt, quidem officiis error ex expedita ad modi.
+        Debitis libero autem commodi recusandae, repudiandae voluptatibus sequi, sapiente nostrum ex voluptatum dolores
+        quasi aliquid expedita numqu quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius
+        error voluptas ea dicta.
+        Expedita, amet esse? Deserunt laudantium delectus assumenda ad ipsa. Eligendi voluptates quam minima
+        voluptatibus quae eos explidelectus mollitia natus, eos nam debitis porro sunt incidunt quas error numquam
+        dolores. Laborum aliquid libero
+        doloribus accusamus officia debitis error voluptas dolorum quis quo accusantium mollitia cupiditate, ex, a
+        suscipit necessitatibus magni aspernatur et inventore quam sunt. Quam molestiae esse tempore repudiandae,
+        possimus blanditiis! Laboriosam eaque ipsam voluptate sint deserunt, quidem officiis error ex expedita ad modi.
+        Debitis libero autem commodi recusandae, repudiandae voluptatibus sequi, sapiente nostrum ex voluptatum dolores
+        quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius error voluptas ea dicta.
+        Expedita, amet esse? Deserun quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius
+        error voluptas ea dicta.
+        Expedita, amet esse? Deserunt laudantium delectus assumenda ad ipsa. Eligendi voluptates quam minima
+        voluptatibus quae eos explidelectus mollitia natus, eos nam debitis porro sunt incidunt quas error numquam
+        dolores. Laborum aliquid libero
+        doloribus accusamus officia debitis error voluptas dolorum quis quo accusantium mollitia cupiditate, ex, a
+        suscipit necessitatibus magni aspernatur et inventore quam sunt. Quam molestiae esse tempore repudiandae,
+        possimus blanditiis! Laboriosam eaque ipsam voluptate sint deserunt, quidem officiis error ex expedita ad modi.
+        Debitis libero autem commodi recusandae, repudiandae voluptatibus sequi, sapiente nostrum ex voluptatum dolores
+        quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius error voluptas ea dicta.
+        Expedita, amet esse? Deserun quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius
+        error voluptas ea dicta.
+        Expedita, amet esse? Deserunt laudantium delectus assumenda ad ipsa. Eligendi voluptates quam minima
+        voluptatibus quae eos explidelectus mollitia natus, eos nam debitis porro sunt incidunt quas error numquam
+        dolores. Laborum aliquid libero
+        doloribus accusamus officia debitis error voluptas dolorum quis quo accusantium mollitia cupiditate, ex, a
+        suscipit necessitatibus magni aspernatur et inventore quam sunt. Quam molestiae esse tempore repudiandae,
+        possimus blanditiis! Laboriosam eaque ipsam voluptate sint deserunt, quidem officiis error ex expedita ad modi.
+        Debitis libero autem commodi recusandae, repudiandae voluptatibus sequi, sapiente nostrum ex voluptatum dolores
+        quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius error voluptas ea dicta.
+        Expedita, amet esse? Deserun quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius
+        error voluptas ea dicta.
+        Expedita, amet esse? Deserunt laudantium delectus assumenda ad ipsa. Eligendi voluptates quam minima
+        voluptatibus quae eos explidelectus mollitia natus, eos nam debitis porro sunt incidunt quas error numquam
+        dolores. Laborum aliquid libero
+        doloribus accusamus officia debitis error voluptas dolorum quis quo accusantium mollitia cupiditate, ex, a
+        suscipit necessitatibus magni aspernatur et inventore quam sunt. Quam molestiae esse tempore repudiandae,
+        possimus blanditiis! Laboriosam eaque ipsam voluptate sint deserunt, quidem officiis error ex expedita ad modi.
+        Debitis libero autem commodi recusandae, repudiandae voluptatibus sequi, sapiente nostrum ex voluptatum dolores
+        quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius error voluptas ea dicta.
+        Expedita, amet esse? Deserun quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius
+        error voluptas ea dicta.
+        Expedita, amet esse? Deserunt laudantium delectus assumenda ad ipsa. Eligendi voluptates quam minima
+        voluptatibus quae eos explidelectus mollitia natus, eos nam debitis porro sunt incidunt quas error numquam
+        dolores. Laborum aliquid libero
+        doloribus accusamus officia debitis error voluptas dolorum quis quo accusantium mollitia cupiditate, ex, a
+        suscipit necessitatibus magni aspernatur et inventore quam sunt. Quam molestiae esse tempore repudiandae,
+        possimus blanditiis! Laboriosam eaque ipsam voluptate sint deserunt, quidem officiis error ex expedita ad modi.
+        Debitis libero autem commodi recusandae, repudiandae voluptatibus sequi, sapiente nostrum ex voluptatum dolores
+        quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius error voluptas ea dicta.
+        Expedita, amet esse? Deserun quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius
+        error voluptas ea dicta.
+        Expedita, amet esse? Deserunt laudantium delectus assumenda ad ipsa. Eligendi voluptates quam minima
+        voluptatibus quae eos explidelectus mollitia natus, eos nam debitis porro sunt incidunt quas error numquam
+        dolores. Laborum aliquid libero
+        doloribus accusamus officia debitis error voluptas dolorum quis quo accusantium mollitia cupiditate, ex, a
+        suscipit necessitatibus magni aspernatur et inventore quam sunt. Quam molestiae esse tempore repudiandae,
+        possimus blanditiis! Laboriosam eaque ipsam voluptate sint deserunt, quidem officiis error ex expedita ad modi.
+        Debitis libero autem commodi recusandae, repudiandae voluptatibus sequi, sapiente nostrum ex voluptatum dolores
+        quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius error voluptas ea dicta.
+        Expedita, amet esse? Deserun quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius
+        error voluptas ea dicta.
+        Expedita, amet esse? Deserunt laudantium delectus assumenda ad ipsa. Eligendi voluptates quam minima
+        voluptatibus quae eos explidelectus mollitia natus, eos nam debitis porro sunt incidunt quas error numquam
+        dolores. Laborum aliquid libero
+        doloribus accusamus officia debitis error voluptas dolorum quis quo accusantium mollitia cupiditate, ex, a
+        suscipit necessitatibus magni aspernatur et inventore quam sunt. Quam molestiae esse tempore repudiandae,
+        possimus blanditiis! Laboriosam eaque ipsam voluptate sint deserunt, quidem officiis error ex expedita ad modi.
+        Debitis libero autem commodi recusandae, repudiandae voluptatibus sequi, sapiente nostrum ex voluptatum dolores
+        quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius error voluptas ea dicta.
+        Expedita, amet esse? Deserun quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius
+        error voluptas ea dicta.
+        Expedita, amet esse? Deserunt laudantium delectus assumenda ad ipsa. Eligendi voluptates quam minima
+        voluptatibus quae eos explidelectus mollitia natus, eos nam debitis porro sunt incidunt quas error numquam
+        dolores. Laborum aliquid libero
+        doloribus accusamus officia debitis error voluptas dolorum quis quo accusantium mollitia cupiditate, ex, a
+        suscipit necessitatibus magni aspernatur et inventore quam sunt. Quam molestiae esse tempore repudiandae,
+        possimus blanditiis! Laboriosam eaque ipsam voluptate sint deserunt, quidem officiis error ex expedita ad modi.
+        Debitis libero autem commodi recusandae, repudiandae voluptatibus sequi, sapiente nostrum ex voluptatum dolores
+        quasi aliquid expedita numquam, earum voluptatem sunt corrupti. Voluptatum eius error voluptas ea dicta.
+        Expedita, amet esse? Deserunam, earum voluptatem sunt corrupti. Voluptatum eius error voluptas ea dicta.
+        Expedita, amet esse? Deserunt laudantium delectus assumenda ad ipsa. Eligendi voluptates quam minima
+        voluptatibus quae eos explicabo quo amet quod odio velit aperiam illum saepe maiores consectetur aut excepturi
+        nobis esse, accusamus commodi tempora beatae ad? Maiores aperiam nihil quis repudiandae? A voluptatem facilis
+        tempora repudiandae exercitationem similique enim, eos omnis. Quisquam veniam dolores ad, modi accusantium
+        eligendi aut dolorem eos id magni, quos tempore? Labore culpa repellat nisi voluptas dolor, harum temporibus
+        repudiandae animi maiores sint tenetur nesciunt tempora illo accusamus, iure aspernatur neque exercitationem
+        eaque quam expedita impedit placeat eum! Laudantium, placeat sapiente deleniti impedit corrupti sint voluptate
+        explicabo rerum officiis aliquid harum atque neque similique ipsam id quidem excepturi blanditiis exercitationem
+        soluta! Cupiditate, quibusdam magnam ducimus inventore totam soluta porro! Minus nihil excepturi recusandae
+        repellendus voluptatem, veritatis dolorem.</p>
+</body>
+
+</html>

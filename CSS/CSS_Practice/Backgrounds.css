@@ -1,0 +1,8 @@
+body {
+  background-color: aliceblue;
+  background-image: url("bird.jpeg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  /* background-attachment: scroll; */
+  background-attachment: fixed;
+}
