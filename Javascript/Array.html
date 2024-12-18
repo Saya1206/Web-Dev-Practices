@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <script>
+        //using subscript [] or literal
+
+        let names = ['neha', 'vijay', 'rakhi', 'ajay'];
+
+        for (let i = 0; i < names.length; i++) {
+            console.log(names[i]);
+        }
+
+        let marks = [45, 67, 90, 34, 55];
+
+        for (let i = 0; i < names.length; i++) {
+            console.log(marks[i]);
+        }
+
+
+        let list = [];
+        list.push("first");
+        list.push("second");
+
+        console.log(list);
+
+
+        //Array using new keyword
+
+        let emp = new Array();
+        emp[0] = 80000;
+        emp[1] = 45000;
+        emp[2] = 71000;
+
+        console.log(emp);
+
+
+        //Array constructor
+
+        let salary = new Array(80000, 45000, 71000);
+        console.log(salary);
+
+
+        //create array using Array.of
+
+        let num = Array.of(10, 20, 30, 40, 50);
+        console.log(num);
+
+
+        //for-in
+
+        let fruits = ['apple', 'banana', 'mango', 'orange'];
+
+        for (let i in fruits)  //i contains index
+        {
+            console.log(fruits[i]);
+        }
+
+
+        //for-of
+
+        let id = [101, 201, 301, 401, 501];
+
+        for (let e of id)  //e contains element
+        {
+            console.log(e);
+        }
+
+    </script>
+</body>
+
+</html>
