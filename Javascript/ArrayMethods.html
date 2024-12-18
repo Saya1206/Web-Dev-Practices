@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+
+<body>
+    <script>
+
+        //concat() Method : combines two or more arrays
+
+        let arr1 = ["C", "C++", "Java", "Python"];
+        let arr2 = ["Angular", "Javascript", "MYSQL"];
+
+        let arrconcat = arr1.concat(arr2);
+        // let result = arr1.concat("Angular", "Javascript", "MYSQL")
+        console.log(arrconcat);
+
+
+        //entries() : holding the key/value pairs for every value in the array
+
+        let nameList = ["neha", "saurabh", "rahul", "hina"];
+        let itr = nameList.entries();
+
+        for (let e of itr) {
+            console.log(e);
+        }
+
+
+        //every() : checks whether all the given elements in an array are satisfying the provided condition
+
+        let marks = [67, 80, 45, 55, 94];
+
+        function check(value) {
+            return value > 50;  //return false, as marks[2]=45 
+        }
+
+        console.log(marks.every(check));
+
+
+        /*
+        //flat() : flattens a given array into a newly created one-dimensional array.(Normalizing nested arrays)
+
+        let arr = [10, 20, [30, 40, 50]];  //Default Depth (1)
+        console.log(arr.flat(2));
+
+        // let arr = [10, 20, [30, 40, [50, 60, 70]]];
+        // console.log(arr.flat(Infinity));
+        */
+
+
+        /*
+        //fill : fill all elements of an array with a static value
+
+        // 1. Fill Entire Array
+        // let arr = [1, 2, 3, 4];
+        // let result = arr.fill(10);
+        // console.log(result);
+
+        //2. Fill from a Specific Start Index
+        // let arr = [1, 2, 3, 4, 5, 6];
+        // let result = arr.fill(55, 2);
+        // console.log(result);
+
+        //3. Fill a Range
+        let arr = [1, 2, 3, 4, 5, 6];
+        let result = arr.fill(70, 2, 5);
+        console.log(result);
+        */
+
+        //from() : used to create a new array from an array-like or iterable object.
+
+        let str = "Hello Guys";
+        let arr = Array.from(str);  //Convert a String to an Array
+        console.log(arr);
+
+        /*
+        //filter() : used to create a new array containing elements that pass a specified test 
+
+        let number = [10, 5, 33, 67, 50];
+        let result = number.filter(num => num > 30);
+        console.log(result);
+
+        //find even number
+        let numbers = [10, 5, 33, 67, 8, 50];
+        let even = numbers.filter(num => num % 2 == 0);
+        console.log(even);
+
+        //filter Strings Based on Length
+        let fruits = ["Apple", "Banana", "Orange", "Mango"];
+        let strfilter = fruits.filter(str => str.length > 5);
+        console.log(strfilter);
+        */
+
+        /*
+        //find() : used to return the first element in an array that satisfies a specified condition
+
+        let numbers = [5, 12, 8, 20, 4, 45];
+        let result = numbers.find(num => num > 10);
+        console.log(result);
+        */
+
+        /*
+        //findIndex() : used to return the index of the first element in an array that satisfies a specified condition
+
+        let numbers = [5, 12, 8, 20, 4, 45];
+        let result = numbers.findIndex(num => num > 10);
+        console.log(result);
+        */
+
+
+        //includes() : used to determine whether an array contains a specified element.
+
+        /*
+        let fruits = ["Apple", "Banana", "Orange", "Mango"];
+        console.log(fruits.includes("Banana"));  // Output: true
+        console.log(fruits.includes('cherry'));  // Output: false
+        */
+
+
+        //indexOf() : used to search the position of a particular element
+
+        /*
+        let arr3 = ["Java", "Python", "Angular", "JS"];
+        let result = arr3.indexOf("Angular");  // Output: 1(first index)
+        console.log(result);
+        */
+
+
+        /*
+        //join() : used to concatenate all the elements of an array into a single string
+
+        let fruits = ["Apple", "Banana", "Orange"];
+        let result = fruits.join();
+        console.log(result);
+
+        // let fruits = ["Apple", "Banana", "Orange"];
+        // let result = fruits.join('-');
+        // console.log(result);
+        */
+
+        /*
+        //map() : calls the specified function for every array element and returns the new array
+
+        let num = [3.4, 5.5, 8.9];
+        let result = num.map(Math.round);
+        console.log(result);
+
+        let m1 = [3, 6, 8, 2, 4];
+        let multi = m1.map(num => num * 2);
+        console.log(multi);
+        */
+
+
+        /*
+        //of() : used to create a new array
+
+        let array = Array.of(1, 2, 3, 4, 5)
+        console.log(array);
+        */
+
+
+        /*
+        //push() : add one or more elements to the end of an array
+
+        let names = ['karan', 'geeta', 'ramesh'];
+        names.push('ajay');
+
+        for (let e of names) {
+            console.log(e);
+        }
+
+        //Adding Multiple Elements
+
+        let num = [10, 20, 30];
+        num.push(40, 50, 60);
+
+        for (let e of num) {
+            console.log(e);
+        }
+            */
+
+
+        /*
+        //pop() : remove the last element from an array and returns the removed element
+
+        let num = [10, 20, 30, 40];
+
+        let removed = num.pop();
+        console.log(removed);
+
+        for (let e of num) {
+            console.log(e);
+        }
+            */
+
+
+        /*
+        //shift() : removes the first element of an array and returns that element
+
+        let names = ['karan', 'geeta', 'ramesh'];
+
+        let firstremoved = names.shift();
+        console.log(firstremoved);
+
+        console.log(names);
+
+        //unshift() : Adds one or more elements to the beginning of an array
+
+        let num = [23, 45, 78, 90];
+
+        num.unshift(10);
+        console.log(num);
+        */
+
+
+        /*
+        //reverse() : used to reverse the elements 
+
+        let fruits = ['apple', 'banana', 'cherry'];
+        let reversedFruits = fruits.reverse();
+        console.log(reversedFruits);
+
+        //reversing numbers
+        let numbers = [10, 40, 80, 100];
+        let result = numbers.reverse();
+        console.log(result);
+        */
+
+
+        /*
+        //slice() : extracts the part of the given array and returns it
+
+        let fruits = ['apple', 'banana', 'mango', 'cherry', 'orange'];
+
+        let result = fruits.slice(1, 4);
+        // let result = fruits.slice(2);
+        // let result = fruits.slice(-3, -1);
+
+        console.log(result);
+        */
+
+
+        /*
+        //sort() : used to sort the elements of an array in place
+
+        let languages = ["Java", "Python", "Angular"];
+        let result = languages.sort();
+        console.log(result);
+
+        let num = [2, 8, 0, 7, 5];
+        let sortnum = num.sort();
+        console.log(sortnum);
+        */
+
+
+        //splice() : used to add, remove, or replace elements in an array
+
+        //Removing Elements
+        let fruits = ['apple', 'banana', 'mango', 'cherry', 'orange'];
+
+        let removed = fruits.splice(2, 3); //// Remove 3 elements starting at index 2
+        console.log(removed);
+
+        console.log(fruits);
+
+        //Adding Elements
+        let languages = ["Java", "Python", "Angular"];
+        languages.splice(2, 0, "C", "JS");  // Add C and JS at index 2
+        console.log(languages);
+
+        const numbers = [1, 2, 5];
+        numbers.splice(2, 0, 3, 4); // Add 3 and 4 at index 2
+        console.log(numbers);
+
+        //Replacing Elements
+        const colors = ['red', 'green', 'blue'];
+        colors.splice(1, 1, 'yellow', 'purple'); // Replace 1 element at index 1 with two new elements
+        console.log(colors);
+
+
+        //toString() : used to convert an array into a string
+
+        let str1 = ['h', 'e', 'l', 'l', 'o'];
+        let result = str1.toString();
+        console.log(result);
+
+    </script>
+</body>
+
+</html>
