@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+
+<body>
+    <script>
+
+        //length : returns the length of a string
+
+        let text = "Hello World";
+        let len = text.length;
+        console.log(len);
+
+
+        //charAt() : returns the character at a specified index in a string
+
+        let str = "Hello World";
+
+        // let char = str.charAt();  //print first character  
+        let char = str.charAt(6);
+        console.log(char);
+
+
+        //charCodeAt() : returns the Unicode value of a character at the specific index
+
+        let x = "Javascript";
+        let code = x.charCodeAt(1);
+        console.log(code);
+
+
+        //concat() : combines two or more strings and returns a new string
+
+        let y = ".com";
+        let combine = x.concat(y);
+        console.log(combine);
+
+        let z = " Practice";
+        let combineAll = x.concat(y, z);
+        console.log(combineAll);
+
+
+        //indexOf() : used to search the position of a particular character
+        //If an element is not present in a string, it returns -1
+
+        let web = "Javascript";
+        let findindex = web.indexOf("a");
+        // let findindex = web.indexOf("a",2); //start searching from index 2
+        console.log(findindex);
+
+
+        //lastIndexOf() : find the last occurrence of a specified value within a string 
+
+        let str1 = "Hello";
+        let lastindex = str1.lastIndexOf("l");
+        console.log(lastindex);
+
+
+        // substring : extracts a specific part of string 
+
+        let str2 = "Good Morning";
+        let part = str2.substring(5, 9);
+        // let part = str2.substring(5);
+        console.log(part);
+
+
+        //slice() : also extracts a part of a string, allows us to pass a negative number as an index
+
+        let str3 = "Good Morning";
+        let lastslice = str3.slice(-5, -2);
+        // let lastslice = str3.slice(-4);
+        console.log(lastslice);
+
+
+        //toLowerCase() : used to convert the string into lowercase letter
+
+        let text1 = "WELCOME";
+        let lowercase = text1.toLowerCase();
+        console.log(lowercase);
+
+
+        //toLowerCase() : used to convert the string into uppercase letter
+
+        let text2 = "hello";
+        let uppercase = text2.toUpperCase();
+        console.log(uppercase);
+
+
+        //trim() : removes the whitespace from both the ends (start and end of the string) 
+
+        let quote = "         Good Vibes   ";
+        let removespace = quote.trim();
+        console.log(removespace);
+
+
+        //replace() : replaces a specified value with another value in a string
+
+        let words = "my name is neha";
+        let change = words.replace("neha", "raj");
+        console.log(change);
+
+        let all = "I love pizza, I love burger";
+        let changeAll = all.replaceAll("love", "hate");
+        console.log(changeAll);
+
+    </script>
+</body>
+
+</html>
