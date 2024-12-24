@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+
+    <a id="myid" href="">Google</a>
+
+    <button onclick="clickLink()">Set Link</button>
+
+    <button onclick="getLink()">Get Link</button>
+
+    <script>
+        // let setLink = document.getElementById("myid");
+        // setLink.setAttribute("href", "https://www.google.com/");
+
+        let clickLink = () => {
+            let setLink = document.getElementById("myid");
+            setLink.setAttribute("href", "https://www.google.com/");
+        }
+
+        let getLink = () => {
+            let get = document.getElementById("myid");
+            let result = get.getAttribute("href");
+            console.log(result);
+        }
+    </script>
+
+</body>
+
+</html>
