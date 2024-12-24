@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <div id="one" style="height: 100px;width: 200px;background-color: cadetblue;margin-bottom: 10px;"></div>
+    <button onclick="first()">Click Me</button>
+
+    <p id="two" style="margin-top: 10px;"></p>
+    <button onmousemove="second()">Mouse Over Me</button>
+
+    <script>
+        document.getElementById("demo").innerHTML = "This is <b>paragraph</b> using <mark>innerHTML</mark>";
+
+        document.getElementById("demo1").innerText = "This is second paragraph using innerText";
+
+        function first() {
+            let firstDiv = document.getElementById("one");
+            firstDiv.innerHTML = "This is <b>first</b> div";
+            firstDiv.style.color = "brown";
+        }
+
+        function second() {
+            let secondDiv = document.getElementById("two");
+            secondDiv.innerText = "This is second div";
+            secondDiv.style.backgroundColor = "aliceblue";
+        }
+    </script>
+
+</body>
+
+</html>
