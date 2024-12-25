@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Factorial</title>
+</head>
+
+<body>
+
+    <label for="num">Enter a number: </label>
+    <input type="text" name="num" id="num">
+
+    <button onclick="fact()">Calculate Factorial</button>
+
+    <p id="result"></p>
+
+    <script>
+        function fact() {
+            let number = document.getElementById("num").value;
+
+            let num1 = parseInt(number);
+
+            let fact = 1;
+            while (num1 != 0) {
+                fact = fact * num1;
+                num1--;
+            }
+
+            document.getElementById("result").innerText = fact;
+        }
+    </script>
+
+</body>
+
+</html>
