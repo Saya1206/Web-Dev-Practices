@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Addition</title>
+</head>
+
+<body>
+
+    <label for="first">Enter First Number: </label>
+    <input type="text" name="first" id="first">
+
+    <label for="second">Enter Second Number: </label>
+    <input type="text" name="second" id="second">
+
+    <button onclick="add()">Addition</button>
+
+    <p id="result"></p>
+
+    <script>
+        let add = () => {
+            let num1 = document.getElementById("first").value;
+            let num2 = document.getElementById("second").value;
+
+            let number1 = parseInt(num1);
+            let number2 = parseInt(num2);
+
+            let sum = number1 + number2;
+
+            document.getElementById("result").innerText = sum;
+        }
+    </script>
+
+</body>
+
+</html>
