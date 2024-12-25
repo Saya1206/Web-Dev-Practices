@@ -1,0 +1,13 @@
+#bag {
+  background-color: rgb(132, 206, 132);
+  border: none;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+#wish {
+  padding: 7px 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-left: 5px;
+}
