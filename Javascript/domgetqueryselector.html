@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+
+    <div id="myId">This is original id content</div>
+    <div id="myClass">This is original class content</div>
+
+    <script>
+        let newDiv1 = document.querySelector("#myId");
+        newDiv1.innerHTML = "This is <mark>new </mark> id content";
+
+        let newDiv2 = document.querySelector(".myClass");
+        newDiv2.innerHTML = "This is new class content";
+    </script>
+
+</body>
+
+</html>
