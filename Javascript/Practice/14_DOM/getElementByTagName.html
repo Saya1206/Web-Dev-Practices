@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+
+    <p>First Paragraph</p>
+
+    <p>Second Paragraph</p>
+
+    <div>My First DIv</div>
+
+    <script>
+
+        let Para = document.getElementsByTagName("p");
+        Para[0].style.backgroundColor = "bisque";
+
+        // Para[1].style.color="pink";
+        document.getElementsByTagName("p")[1].style.color = "pink";
+
+        let newDiv = document.getElementsByTagName("div");
+        newDiv[0].style.backgroundColor = "grey";
+        newDiv[0].style.color = "brown";
+
+    </script>
+</body>
+
+</html>
