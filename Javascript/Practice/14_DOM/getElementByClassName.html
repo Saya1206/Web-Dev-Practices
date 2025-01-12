@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+
+    <p class="first"></p>
+
+    <p class="first">This is second Paragraph</p>
+
+    <h2 class="head">Welcome</h2>
+
+    <script>
+
+        let firstPara = document.getElementsByClassName("first");
+        firstPara[0].innerHTML = "This is <mark>First</mark> paragraph";
+
+        let secondPara = document.getElementsByClassName("first");
+        secondPara[1].innerHTML = "This is <mark>Second</mark> paragraph";
+
+        let heading = document.getElementsByClassName("head");
+        heading[0].style.color = "brown";
+
+    </script>
+</body>
+
+</html>
