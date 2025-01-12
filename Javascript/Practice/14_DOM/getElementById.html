@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+    <p id="second"></p>
+
+    <div id="mydiv">Hello, JS!</div>
+
+    <button id="change" onclick="changeMe()">Click Me!</button>
+
+    <script>
+
+        let firstPara = document.getElementById("demo");
+        firstPara.innerHTML = "This is <b>First</b> paragraph";
+
+        let secondPara = document.getElementById("second");
+        secondPara.innerText = "This is second paragraph";
+        secondPara.style.color = "brown";
+
+        let div = document.getElementById("mydiv");
+        div.style.height = "100px";
+        div.style.width = "100px";
+        div.style.backgroundColor = "bisque";
+
+        function changeMe() {
+            let newDiv = document.getElementById("change");
+            newDiv.innerHTML = "Good Luck!";
+            // newDiv.style.height = "100px";
+            // newDiv.style.width = "100px";
+            newDiv.style.backgroundColor = "pink";
+        }
+
+    </script>
+</body>
+
+</html>
