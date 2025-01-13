@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+
+    <img id="myid" alt="Error">
+
+    <a id="btn" href="https://google.com/">Google</a>
+
+    <button onclick="changeLink()">Change Link</button>
+
+    <button onclick="getLink()">Get Link</button>
+
+    <script>
+
+        let imagePath = document.querySelector("#myid");
+        imagePath.setAttribute("src", "https://images.pexels.com/photos/906150/pexels-photo-906150.jpeg?auto=compress&cs=tinysrgb&w=600");
+
+        let getImagePath = imagePath.getAttribute("src");
+        let getImageAlt = imagePath.getAttribute("alt");
+        console.log(getImagePath);
+        console.log(getImageAlt);
+
+        function changeLink() {
+            let change = document.getElementById("btn");
+            change.setAttribute("href", "https://images.google.com/");
+            change.innerHTML = "<b>Google Images</b>"
+        }
+
+        function getLink() {
+            let getLink = document.getElementById("btn");
+            let get = getLink.getAttribute("href");
+            console.log(get);
+        }
+
+    </script>
+</body>
+
+</html>
