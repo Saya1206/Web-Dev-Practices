@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+
+    <div id="myid">This is origianl content of id</div>
+    <div class="myclass">This is origianl content of class</div>
+
+    <p></p>
+
+    <script>
+
+        let newId = document.querySelector("#myid");
+        newId.style.color = "brown";
+
+        let newClass = document.querySelector(".myclass");
+        newClass.style.backgroundColor = "bisque";
+
+        let newPara = document.querySelector("p");
+        newPara.innerHTML = "This is <b>Tag</b> Selector";
+        newPara.style.height = "200px";
+        newPara.style.width = "200px";
+        newPara.style.border = "2px solid black";
+        newPara.style.backgroundColor = "lightblue";
+
+    </script>
+</body>
+
+</html>
